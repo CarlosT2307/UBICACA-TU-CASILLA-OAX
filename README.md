@@ -43,7 +43,7 @@
     }
     iframe {
       width: 100%;
-      height: 400px;
+      height: 500px;
       border: 0;
       border-radius: 10px;
     }
@@ -56,17 +56,19 @@
 <body>
   <div class="container">
     <h1>Consulta tu casilla</h1>
-    <a class="button" href="https://ubicatucasilla.ine.mx" target="_blank">Ir a la página del INE</a>
+    
+    <!-- Botón que lleva al mapa personalizado -->
+    <a class="button" href="https://www.google.com/maps/d/u/3/viewer?mid=1tSAeFnV9QGDjOCKqp470f-tT7JZslgI&usp=sharing" target="_blank">
+      Ver ubicaciones en Google Maps
+    </a>
 
-    <!-- Mapa con ubicación -->
+    <!-- Mapa embebido desde Google My Maps -->
     <div class="map-container">
-      <h2>Ubicación sugerida</h2>
-      <iframe 
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3772.6019988138364!2d-96.72675498468953!3d17.061374788267785!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85c7224511f5037d%3A0x3b8b7d23a8c28d8f!2sINE%20Oaxaca!5e0!3m2!1ses!2smx!4v1685984172468!5m2!1ses!2smx" 
-        allowfullscreen="" loading="lazy">
-      </iframe>
+      <h2>Mapa de casillas en Oaxaca</h2>
+      <iframe src="https://www.google.com/maps/d/u/3/embed?mid=1tSAeFnV9QGDjOCKqp470f-tT7JZslgI" allowfullscreen></iframe>
     </div>
 
+    <!-- Imagen opcional -->
     <img src="https://www.ine.mx/wp-content/themes/INE/assets/img/logo-ine-2022.svg" alt="INE Logo">
   </div>
 </body>
